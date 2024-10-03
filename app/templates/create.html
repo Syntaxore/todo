@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            height: 100vh; /* Занять всю высоту окна */
+            display: flex;
+            justify-content: center; /* Центрировать по горизонтали */
+            align-items: center; /* Центрировать по вертикали */
+        }
+
+        .frame {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column; /* Вертикальное выравнивание */
+            justify-content: flex-start; /* Выровнять содержимое по верхнему краю */
+            height: auto; /* Высота будет зависеть от содержимого */
+            width: 300px; /* Задаем ширину контейнера */
+        }
+
+        h1 {
+            margin-bottom: 20px; /* Отступ снизу для заголовка */
+            text-align: center; /* Центрируем заголовок */
+        }
+
+        input {
+            padding: 10px; /* Отступы внутри полей ввода */
+            margin-bottom: 10px; /* Отступ между полями ввода */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%; /* Занять всю ширину контейнера */
+            box-sizing: border-box; /* Учитывать отступы и границы в ширине */
+        }
+
+        textarea {
+            padding: 10px; /* Отступы внутри текстовой области */
+            margin-bottom: 10px; /* Отступ между полями ввода */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%; /* Занять всю ширину контейнера */
+            box-sizing: border-box; /* Учитывать отступы и границы в ширине */
+            resize: vertical; /* Позволяет изменять размер только по вертикали */
+            min-height: 50px; /* Минимальная высота текстовой области */
+        }
+
+        button {
+            padding: 10px; /* Отступы внутри кнопки */
+            margin-top: 10px; /* Отступ сверху для кнопки */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%; /* Занять всю ширину контейнера */
+            box-sizing: border-box; /* Учитывать отступы и границы в ширине */
+        }
+
+        .create-task {
+            background-color: #4CAF50; /* Зеленый */
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <h1>Создать задачу</h1>
+        <input type="text" placeholder="Название задачи">
+        <textarea class="create" placeholder="Содержание"></textarea>
+        <button class="create-task">Создать задачу</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .frame {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .create-task {
+            background-color: #4CAF50; /* Зеленый */
+            color: white;
+        }
+        .complete-task {
+            background-color: #f44336; /* Красный */
+            color: white;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <h1>Список задач</h1>
+        <form action="/" method="post">
+        <button class="create-task" name="create">Создать задачу</button>
+        <button class="complete-task" type="button">Завершить задачу</button>
+    </form>
+    </div>
+</body>
+</html>
